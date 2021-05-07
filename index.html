@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/yaLogo.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="presentation">
+        <div class="presentation__wrapper">
+          <div class="presentation__logo">
+            <span class="logo yaLogo"></span>
+          </div>
+          <div class="presentation__description">
+            <h2>Яндекс ID - один аккаунт для всего</h2>
+          </div>
+          <div class="presentation__services">
+            <ul class="services__icons">
+              <li class="service__icon icon-mail">
+                <img src="images/mail.svg" alt="" />
+              </li>
+              <li class="service__icon icon-disk">
+                <img src="images/disk.svg" alt="" />
+              </li>
+              <li class="service__icon icon-market">
+                <img src="images/market.svg" alt="" />
+              </li>
+              <li class="service__icon icon-music">
+                <img src="images/music.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="presentation__about">
+            Ищите, пишите письма, сохраняйте и делитесь файлами, выбирайте
+            товары, слушайте музыку и прокладывайте маршруты с одним аккаунтом
+            на всех устройствах и платформах.
+          </div>
+        </div>
+        <footer class="footer">
+          <ul class="footer__list">
+            <li class="item language">
+              <a href="">Ru</a>
+            </li>
+            <li class="item support">
+              <a href="">Справка</a>
+            </li>
+            <li class="item feedback">
+              <a href="">Обратная связь</a>
+            </li>
+            <li class="item">© 2001-2021, <a href="">Яндекс</a></li>
+          </ul>
+        </footer>
+      </div>
+      <div class="registration">
+          <div class="registration__auth-link">
+            У вас уже есть аккаунт на Яндексе?
+            <a class="link" href="" title="Войти">Войти</a>
+          </div>
+          <div class="registration__wrapper">
+            <div class="registration__header">
+              <h1>Регистрация</h1>
+            </div>
+            <form class="registration__form" action="">
+                <input class="form-input" type="text" placeholder="Имя">
+                <input class="form-input" type="text"placeholder="Фамилия">
+                <input class="form-input" type="text"placeholder="Придумайте логин">
+                <input class="form-input" type="password"placeholder="Придумайте пароль">
+                <input class="form-input" type="password"placeholder="Повторите пароль">
+                <input class="form-input" type="tel"placeholder="Номер мобильного телефона">
+                <a class="link_has-no-phone" href="">У меня нет телефона</a>
+                <button type="submit" class="form__submit btn btn-warning">Зарегестрироваться</button>
+                <div class="form__eula">
+                    <span>Нажимая кнопку «Зарегистрироваться»:</span>
+                </div>
+                <div class="form__eula-block">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Я принимаю условия Пользовательского соглашения
+                        и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных 
+                       Политикой конфиденциальности
+                       </a>.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        Я не хочу получать рекламу и другие предложения данного сервиса Яндекса
+                    </label>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 1.3rem;
+}
+h1,
+h2 {
+  font: inherit;
+  margin: 0 0 20px;
+  color: #333;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: #04b;
+  text-decoration: none;
+}
+.main-container {
+  display: flex;
+}
+.presentation,
+.registration {
+  text-align: center;
+}
+.presentation {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 116px 40px 0;
+}
+.presentation__wrapper {
+  max-width: 600px;
+}
+.presentation__logo {
+  margin-bottom: 15px;
+}
+.yaLogo {
+  display: block;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background-image: url(images/yaLogo.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  outline: none;
+}
+.presentation__description {
+  font-size: 1.3em;
+  margin-bottom: 60px;
+}
+.services__icons {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.service__icon {
+  margin-left: 60px;
+  display: inline-block;
+}
+.service__icon:first-child {
+  margin-left: 0;
+}
+.service__icon img {
+  height: 100%;
+  width: 100%;
+}
+.icon-mail {
+  width: 44px;
+  height: 32px;
+}
+.icon-disk {
+  width: 54px;
+  height: 36px;
+}
+.icon-market {
+  width: 40px;
+  height: 36px;
+}
+.icon-music {
+  width: 30px;
+  height: 33px;
+}
+.presentation__about {
+  margin: 60px auto 0;
+  max-width: 600px;
+  font: 15px/1.5em "Helvetica";
+  color: #757575;
+}
+.footer {
+  width: 400px;
+  height: 5rem;
+  margin-top: auto;
+  padding: 30px 16px 0;
+  font-size: 13px;
+  color: #999;
+}
+.footer__list {
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.registration {
+  display: flex;
+  width: 50%;
+}
+.registration__wrapper {
+  width: 400px;
+  height: 742px;
+  padding: 30px 0;
+  margin-top: 86px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
+}
+.registration__auth-link {
+  font: 13px/1.5em "Yandex-Sans-Text-Web-Regular";
+  color: #999;
+}
+.registration__header {
+  margin-bottom: 40px;
+}
+.registration__form {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font: 15px "Yandex-Sans-Text-Web-Regular";
+  text-align: start;
+}
+
+.form-input {
+  height: 34px;
+  border: solid rgba(0, 0, 0, 0.2);
+  border-width: 0 0 1px;
+  transition: background-color 0.15s linear;
+  background-color: #fff;
+  margin: 12px 0;
+}
+.form__submit {
+  margin: 35px 0 10px;
+}
+.form__eula {
+  font: 13px/1.5em "Yandex-Sans-Text-Web-Regular";
+  color: #999;
+  margin-bottom: 15px;
+}
+.form-check-input {
+  background-color: #dbdbdb;
+  width: 17px;
+  height: 17px;
+}
+
+@media only screen and (min-width: 600px) {
+  .registration__auth-link {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main-container {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    min-width: auto;
+    justify-content: center;
+  }
+  .presentation__wrapper {
+    display: none;
+  }
+  .presentation {
+    width: 60%;
+    padding: 0;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: center;
+  }
+  .registration {
+    width: auto;
+  }
+  .footer {
+    margin-top: 40px;
+  }
+}
