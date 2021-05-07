@@ -1,1 +1,2 @@
-# test-netcracker
+# Тестовое задание для Netcracker Technology Corp.
+
